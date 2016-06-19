@@ -5,26 +5,31 @@ body { margin: 0; font-family: sans-serif; font-size: 16px; }
 
 /* Header */
 .header { height: 20px; }
-.header ul { -webkit-margin-before: 0; -webkit-margin-after: 0; }
-.header ul li { display: inline-block; float: right; padding-left: 10px; }
-.header ul li:nth-child(1) { background: url('photo.jpg'); }
-.header ul li:nth-child(2){ background: url('l5S4LZ2.png'); }
-.header ul li:nth-child(3) { background: url('googlelogo_color_272x92dp.png'); }
+.header ul { margin-right: 20px; list-style-type: none; -webkit-margin-before: 0; -webkit-margin-after: 0; float: right; margin-top: 10px;}
+.header ul li { margin-right: 10px; float: right; padding: 10px; font-size: 13px; font-family: arial, sans-serif; opacity: .75; }
+.header ul li:hover { text-decoration: underline; cursor: pointer; }
+.header ul li#gmail {  } 
+.header ul li#images {    }
+.header ul li#squares { background-image: url('photos/squares.png'); height: 10px; width: 10px; margin-top: 4px;  }
+.header ul li#bell { background-image: url('photos/bell.png'); height: 2px; width: 5px; margin-top: 6px;  }
+.header ul li#username { background-image: url('photos/photo.jpg'); height: 13px; width: 13px; margin-top: 0; border-radius: 50%;}
 
 /* Main Area */
-.content { margin-top: 100px; margin-bottom: 80px; }
+.content { margin-top: 175px; margin-bottom: 80px; }
 .content img#google-image { margin: 0 auto; display: block; }
-.content .input-wrapper { position: relative; width: 600px; margin: 20px auto 0; }
+.content .input-wrapper { position: relative; width: 600px; margin: 30px auto 0; }
 .content input { position: absolute; width: 100%; height: 35px; border: 1px solid #ccc; }
 .content input:hover { border-color: #aaa; }
 .content input:focus { border-color: #147B7B; }
 .content img#microphone { position: absolute; width: 25px; top: 8px; right: 0px; }
-.links { display: block; margin: 0 auto; text-align: center; }
-.links a { border: 1px solid #eee; display: inline-block; background: #eee; padding: 10px 20px; text-decoration: none; }
-.links a:hover { border: 1px solid #aaa; }
+.links { display: block; padding-top: 20px; margin: 0px auto; text-align: center; }
+.links a { cursor: default; color: #757575; border: 1px solid #eee; display: inline-block; background: #eee; padding: 11px 16px; text-decoration: none; font-family: arial, sans-serif; font-size: 13px; font-weight: bold;}
+.links a:hover { border: 1px solid #c6c6c6; cursor: default;}
 
 /* Footer */
-footer { position: fixed; bottom: 0; margin-top: 100px; background: #eee; border-top: 1px solid #ccc; padding: 5px 0; width: 100%; }
-footer ul li { display: inline-block; padding-left: 10px; }
-footer ul.left li { float: left; }
-footer ul.right li { float: right; }
+footer { font-family: arial, sans-serif; font-size: 13px; position: fixed; bottom: 0; margin-top: 100px; background: #eee; border-top: 1px solid #ccc; padding: 15px 0; width: 100%; }
+footer ul { margin: 0; }
+footer ul li { display: inline-block; opacity: 0.75;}
+footer ul li:hover { cursor: pointer; text-decoration: underline; }
+footer ul.left li { float: left; padding-left: 27px;}
+footer ul.right li { float: right; padding-right: 27px;}
